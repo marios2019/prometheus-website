@@ -1,0 +1,5 @@
+[[shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/marios2019/prometheus-website"
+weight = 10

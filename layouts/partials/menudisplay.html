@@ -1,0 +1,17 @@
+{{- $page := . }}
+{{- $disableShortcutsTitle := .Site.Params.DisableShortcutsTitle }}
+{{- with .Site.Menus.shortcuts }}
+<div>
+  <ul>
+    {{- range sort . "Weight" }}
+      {{- $shortcut := . }}
+      {{- with $page.Site.GetPage (printf "%s" $shortcut.URL ) }}
+        {{- $to := . }}
+    <li>{{ $shortcut.Pre }}<a class="padding" href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" $to) }}">{{ safeHTML $shortcut.Name }}</a>{{ $shortcut.Post }}</li>
+      {{- else }}
+    <li>{{ $shortcut.Pre }}<a class="padding" href="{{ $shortcut.URL | relLangURL }}">{{ safeHTML $shortcut.Name }}</a>{{ $shortcut.Post }}</li>
+      {{- end }}
+    {{- end }}
+  </ul>
+</div>
+{{- end }}

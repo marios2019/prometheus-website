@@ -1,0 +1,14 @@
+author.name = "Marios Loizou"
+author.emails = "mrsloizou19@gmail.com"
+
+images = [ "assets/images/cluster_front.jpg" ]
+description = "Documentation for the Prometheus cluster"
+
+themeVariant = [ "auto", "relearn-light", "relearn-bright", "relearn-dark", "zen-light", "zen-dark", "neon"]
+
+editURL = ""
+disableLandingPageButton = true
+disableInlineCopyToClipBoard = false
+imageEffects.shadow = true
+imageEffects.lightbox = true
+imageEffects.border = true

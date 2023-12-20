@@ -1,6 +1,7 @@
-baseURL = 'https://marios2019.github.io/prometheus-website/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Prometheus Cluster'
 theme = 'hugo-theme-relearn'
+relativeURLs = true
 
 #disableShortcutsTitle=false
